@@ -26,7 +26,7 @@ function Popup({ openPopup, setOpenPopUp }) {
       setLoader(!loader);
       try {
         const response = await axios.post(
-          "http://localhost:5000/referral",
+          "https://accredian-backend-task-p1h7.onrender.com/referral",
           data
         );
         console.log("Referral data submitted:", response.data);
